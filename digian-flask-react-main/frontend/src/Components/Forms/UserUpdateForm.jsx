@@ -18,7 +18,9 @@ const UserUpdateForm = ({ user, onClose }) => {
         e.preventDefault();
 
         const data = {
-            email
+            email,
+            username,
+            password_hash
         }
         const url = `http://127.0.0.1:9090/update_user/${user.id}`;
         const options = {

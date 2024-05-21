@@ -1,0 +1,50 @@
+<!--
+        Vite kurulumu ile frontend sayfa tasarımına başlandı.
+
+        npx degit user/project#main my-project
+        cd my-project
+
+        npm install
+        npm run dev
+
+        One thing you may have noticed is that in a Vite project, index.html is front-and-central instead of being tucked away inside public.
+        This is intentional: during development Vite is a server, and index.html is the entry point to your application.
+
+        https://vitejs.dev/guide/#trying-vite-online more information.
+    
+    DOM NEDİR?
+        DOM aslında bir programlama dili değil,
+        belgeleri nesne tabanlı bir şekilde temsil eden ve bu belgeler üzerinde değişiklik yapmayı sağlayan bir standarttır.
+        Yani, bir web sayfasının içindeki HTML veya XML belgesini bir nesne koleksiyonu olarak düşünebiliriz.
+        Web sayfasının “belgesi” dediğimiz şey, temelde HTML veya XML kodlarından oluşan bir yapıdır.
+        Bu belge, tarayıcıda bir sayfa olarak görünebileceği gibi, aynı zamanda bir HTML kaynağı olarak da işlev görebilir. 
+        DOM’un rolü, bu belgeyi bir nesne modeli halinde sunarak, programlama dillerinin bu belgeye erişip üzerinde değişiklik yapmasını mümkün kılmaktır.
+        Yani, DOM sayesinde programlama dilleri, belge yapısını, stillerini veya içeriğini değiştirebilir. 
+        DOM’un sağladığı bu standart arayüz sayesinde, web sayfaları dinamik hale getirilebilir ve kullanıcı etkileşimleriyle uyumlu hale getirilebilir.
+
+        Web uygulamalarının performansını artırmak ve etkileşimli kullanıcı deneyimleri sunmak için geliştirilen bir teknik, Virtual DOM adı verilen bir kavramı içerir.
+        Şöyle düşünün, var olan DOM yapısıyla eşleşen bir “sanal” bir kopya oluşturuyoruz; işte buna Virtual DOM diyoruz.
+        Bu Virtual DOM, gerçek DOM’un bir tür yedek kopyasıdır ve tamamen bellekte saklanır. Gerçek bir DOM (Real DOM) aynı zamanda uygulamada canlı olarak işlemekte olan versiyondur.
+        Şimdi, uygulama içinde bir değişiklik yapıldığında, bu değişiklikler önce Virtual DOM üzerinde yapılır, yani bu sanal kopya üzerinde oynanır.
+
+        Sonrasında, Real DOM ile Virtual DOM arasında bir karşılaştırma gerçekleştirilir. Bu karşılaştırma sonucunda hangi alanlarda değişiklik olduğu belirlenir.
+        İşte burada performansın güzellikleri devreye girer: Sadece gerçekten değişen alanlar, yani farklılık tespit edilen kısımlar, güncellenir. 
+        Yani, ihtiyaç duyulmayan veya değişiklik yapmayan alanlar tekrar tekrar güncellenmez.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->

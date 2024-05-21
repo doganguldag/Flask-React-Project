@@ -300,3 +300,20 @@ def update_user(id):
     db.session.commit()
 
     return jsonify({"message": "User updated."}), 200
+
+@app.route("/update_message/<int:id>", methods=["PATCH"])
+def update_message(id):
+    message = Messages.query.get(id)
+
+    if not message:
+        return jsonify({"message": "Message not found"}), 404
+
+    data = request.json
+    message.name = data.get("name", message.name)
+    message.message = data.get("message", message.message)
+    message.phone = data.get("phone", message.phone)
+    message.subject = data.get("subject", message.subject)
+
+    db.session.commit()
+
+    return jsonify({"message": "Message updated."}), 200

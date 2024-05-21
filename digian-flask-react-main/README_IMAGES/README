@@ -1,4 +1,4 @@
-<!--
+/*
         Vite kurulumu ile frontend sayfa tasarımına başlandı.
 
         npx degit user/project#main my-project
@@ -47,4 +47,5 @@
 
 
 
--->
+
+*/

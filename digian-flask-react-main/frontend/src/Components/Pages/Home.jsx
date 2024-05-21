@@ -11,6 +11,8 @@ const Home = () => {
   if (serviceError || customerError) return <p>{serviceError.message || customerError.message}</p>;
   if (!serviceData || !customerData) return null;
 
+  /* Anasayfada veritabanından çekilen servisler ve müşteri yorumları bu şekilde gösterilecek  */
+
   return (
     <>
       <div className="hero_area">
